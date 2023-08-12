@@ -45,7 +45,7 @@ This symlink points to:
 - `$XDG_STATE_HOME/profiles/channels` for regular users
 - `$NIX_STATE_DIR/profiles/per-user/root/channels` for `root`
 
-In a multi-user installation, you may also have `~/.nix-defexpr/channels_root`, which links to the channels of the root user.[`nix-env`]: ../nix-env.md
+In a multi-user installation, you may also have `~/.nix-defexpr/channels_root`, which links to the channels of the root user.[`nix-env`]: @docroot@/command-ref/files/nix-env.md
 
 [`nix-env`]: @docroot@/command-ref/nix-env.md
 [`nix-channel`]: @docroot@/command-ref/nix-channel.md

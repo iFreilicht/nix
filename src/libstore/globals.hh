@@ -258,7 +258,7 @@ public:
         this, "@" + nixConfDir + "/machines", "builders",
         R"(
           A semicolon-separated list of build machines.
-          For the exact format and examples, see [the manual chapter on remote builds](../advanced-topics/distributed-builds.md)
+          For the exact format and examples, see [the manual chapter on remote builds](@docroot@/advanced-topics/distributed-builds.md)
         )"};
 
     Setting<bool> buildersUseSubstitutes{

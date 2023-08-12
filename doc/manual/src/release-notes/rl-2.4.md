@@ -40,7 +40,7 @@ more than 2800 commits from 195 contributors since release 2.3.
   see [this blog
   post](https://www.tweag.io/blog/2020-05-25-flakes/). For detailed
   information about flake syntax and semantics, see the [`nix flake`
-  manual page](../command-ref/new-cli/nix3-flake.md).
+  manual page](@docroot@/command-ref/new-cli/nix3-flake.md).
 
 * Nix's store can now be **content-addressed**, meaning that the hash
   component of a store path is the hash of the path's

@@ -5,7 +5,7 @@ R""(
 * Show the [store derivation] that results from evaluating the Hello
   package:
 
-  [store derivation]: ../../glossary.md#gloss-store-derivation
+  [store derivation]: @docroot@/glossary.md#gloss-store-derivation
 
   ```console
   # nix derivation show nixpkgs#hello

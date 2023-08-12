@@ -13,7 +13,7 @@ Interpolated expressions must evaluate to one of the following:
 [string]: ./values.md#type-string
 [path]: ./values.md#type-path
 [attribute name]: ./values.md#attribute-set
-[derivation]: ../glossary.md#gloss-derivation
+[derivation]: @docroot@/glossary.md#gloss-derivation
 
 ## Examples
 

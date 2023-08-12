@@ -114,8 +114,8 @@
 
   When an [interpolated string][string interpolation] evaluates to a path, the path is first copied into the Nix store and the resulting string is the [store path] of the newly created [store object].
 
-  [store path]: ../glossary.md#gloss-store-path
-  [store object]: ../glossary.md#gloss-store-object
+  [store path]: @docroot@/glossary.md#gloss-store-path
+  [store object]: @docroot@/glossary.md#gloss-store-object
 
   For instance, evaluating `"${./foo.txt}"` will cause `foo.txt` in the current directory to be copied into the Nix store and result in the string `"/nix/store/<hash>-foo.txt"`.
 

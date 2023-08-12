@@ -10,7 +10,7 @@ $ cd nix
 
 The following instructions assume you already have some version of Nix installed locally, so that you can use it to set up the development environment. If you don't have it installed, follow the [installation instructions].
 
-[installation instructions]: ../installation/installation.md
+[installation instructions]: @docroot@/installation/installation.md
 
 ## Building Nix with flakes
 
@@ -127,7 +127,7 @@ on, you need a way for your current Nix installation to build code for that
 platform. Common solutions include [remote builders] and [binary format emulation]
 (only supported on NixOS).
 
-[remote builders]: ../advanced-topics/distributed-builds.md
+[remote builders]: @docroot@/advanced-topics/distributed-builds.md
 [binary format emulation]: https://nixos.org/manual/nixos/stable/options.html#opt-boot.binfmt.emulatedSystems
 
 Given such a setup, executing the build only requires selecting the respective attribute.

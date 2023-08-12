@@ -14,7 +14,7 @@ builds) are forwarded to a *Nix daemon* running under the owner of the
 Nix store/database that performs the operation.
 
 > **Note**
-> 
+>
 > Multi-user mode has one important limitation: only root and a set of
 > trusted users specified in `nix.conf` can specify arbitrary binary
 > caches. So while unprivileged users may install packages from
@@ -41,7 +41,7 @@ expect to do many builds at the same time.
 
 ## Running the daemon
 
-The [Nix daemon](../command-ref/nix-daemon.md) should be started as
+The [Nix daemon](@docroot@/command-ref/nix-daemon.md) should be started as
 follows (as `root`):
 
 ```console
@@ -51,7 +51,7 @@ $ nix-daemon
 You’ll want to put that line somewhere in your system’s boot scripts.
 
 To let unprivileged users use the daemon, they should set the
-[`NIX_REMOTE` environment variable](../command-ref/env-common.md) to
+[`NIX_REMOTE` environment variable](@docroot@/command-ref/env-common.md) to
 `daemon`. So you should put a line like
 
 ```console

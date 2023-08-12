@@ -204,7 +204,7 @@ Derivations can declare some infrequently used optional attributes.
 
     The `outputHash` attribute, finally, must be a string containing
     the hash in either hexadecimal or base-32 notation. (See the
-    [`nix-hash` command](../command-ref/nix-hash.md) for information
+    [`nix-hash` command](@docroot@/command-ref/nix-hash.md) for information
     about converting to and from base-32 notation.)
 
   - [`__contentAddressed`]{#adv-attr-__contentAddressed}
@@ -213,7 +213,7 @@ Derivations can declare some infrequently used optional attributes.
     >
     > To use this attribute, you must enable the
     > [`ca-derivations`](@docroot@/contributing/experimental-features.md#xp-feature-ca-derivations) experimental feature.
-    > For example, in [nix.conf](../command-ref/conf-file.md) you could add:
+    > For example, in [nix.conf](@docroot@/command-ref/conf-file.md) you could add:
     >
     > ```
     > extra-experimental-features = ca-derivations
@@ -249,7 +249,7 @@ Derivations can declare some infrequently used optional attributes.
 
   - [`preferLocalBuild`]{#adv-attr-preferLocalBuild}\
     If this attribute is set to `true` and [distributed building is
-    enabled](../advanced-topics/distributed-builds.md), then, if
+    enabled](@docroot@/advanced-topics/distributed-builds.md), then, if
     possible, the derivation will be built locally instead of forwarded
     to a remote machine. This is appropriate for trivial builders
     where the cost of doing a download or remote build would exceed
@@ -295,7 +295,7 @@ Derivations can declare some infrequently used optional attributes.
     [`disallowedReferences`](#adv-attr-disallowedReferences) and [`disallowedRequisites`](#adv-attr-disallowedRequisites),
     the following attributes are available:
 
-    - `maxSize` defines the maximum size of the resulting [store object](../glossary.md#gloss-store-object).
+    - `maxSize` defines the maximum size of the resulting [store object](@docroot@/glossary.md#gloss-store-object).
     - `maxClosureSize` defines the maximum size of the output's closure.
     - `ignoreSelfRefs` controls whether self-references should be considered when
       checking for allowed references/requisites.

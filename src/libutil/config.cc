@@ -260,6 +260,10 @@ template<> std::string BaseSetting<bool>::to_string() const
 template<> void BaseSetting<bool>::convertToArg(Args & args, const std::string & category)
 {
     auto indentedDescription = indent(2, description);
+    if (name == "experimental-features") {
+        /* Workaround for the {{#include}} directive inside the experimental-features docs */
+        indentedDescription = "Check the nix reference manual for info on experimental features.";
+    }
     args.addFlag({
         .longName = name,
         .description = fmt("Enable the `%s` setting:\n%s", name, indentedDescription),

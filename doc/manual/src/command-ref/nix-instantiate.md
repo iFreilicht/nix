@@ -23,7 +23,7 @@ It evaluates the Nix expressions in each of *files* (which defaults to
 derivation, a list of derivations, or a set of derivations. The paths
 of the resulting store derivations are printed on standard output.
 
-[store derivation]: ../glossary.md#gloss-store-derivation
+[store derivation]: @docroot@/glossary.md#gloss-store-derivation
 
 If *files* is the character `-`, then a Nix expression will be read from
 standard input.
@@ -67,7 +67,7 @@ standard input.
     When used with `--eval`, print the resulting value as an XML
     representation of the abstract syntax tree rather than as an ATerm.
     The schema is the same as that used by the [`toXML`
-    built-in](../language/builtins.md).
+    built-in](@docroot@/language/builtins.md).
 
   - `--read-write-mode`\
     When used with `--eval`, perform evaluation in read/write mode so

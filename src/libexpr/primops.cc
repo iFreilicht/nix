@@ -4071,7 +4071,7 @@ static RegisterPrimOp primop_compareVersions({
       version *s1* is older than version *s2*, `0` if they are the same,
       and `1` if *s1* is newer than *s2*. The version comparison
       algorithm is the same as the one used by [`nix-env
-      -u`](../command-ref/nix-env.md#operation---upgrade).
+      -u`](@docroot@/command-ref/nix-env.md#operation---upgrade).
     )",
     .fun = prim_compareVersions,
 });
@@ -4098,7 +4098,7 @@ static RegisterPrimOp primop_splitVersion({
     .doc = R"(
       Split a string representing a version into its components, by the
       same version splitting logic underlying the version comparison in
-      [`nix-env -u`](../command-ref/nix-env.md#operation---upgrade).
+      [`nix-env -u`](@docroot@/command-ref/nix-env.md#operation---upgrade).
     )",
     .fun = prim_splitVersion,
 });

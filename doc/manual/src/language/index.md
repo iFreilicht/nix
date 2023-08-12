@@ -195,7 +195,7 @@ This is an incomplete overview of language features, by example.
   </td>
   <td>
 
-   Search path for Nix files. Value determined by [`$NIX_PATH` environment variable](../command-ref/env-common.md#env-NIX_PATH).
+   Search path for Nix files. Value determined by [`$NIX_PATH` environment variable](@docroot@/command-ref/env-common.md#env-NIX_PATH).
 
   </td>
  </tr>

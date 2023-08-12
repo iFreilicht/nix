@@ -1,7 +1,7 @@
 # Basic Package Management
 
 The main command for package management is
-[`nix-env`](../command-ref/nix-env.md).  You can use it to install,
+[`nix-env`](@docroot@/command-ref/nix-env.md).  You can use it to install,
 upgrade, and erase packages, and to query what packages are installed
 or are available for installation.
 
@@ -25,7 +25,7 @@ or completely new ones.)
 
 You can manually download the latest version of Nixpkgs from
 <https://github.com/NixOS/nixpkgs>. However, it’s much more
-convenient to use the Nixpkgs [*channel*](../command-ref/nix-channel.md), since it makes
+convenient to use the Nixpkgs [*channel*](@docroot@/command-ref/nix-channel.md), since it makes
 it easy to stay up to date with new versions of Nixpkgs. Nixpkgs is
 automatically added to your list of “subscribed” channels when you
 install Nix. If this is not the case for some reason, you can add it
@@ -37,7 +37,7 @@ $ nix-channel --update
 ```
 
 > **Note**
-> 
+>
 > On NixOS, you’re automatically subscribed to a NixOS channel
 > corresponding to your NixOS major release (e.g.
 > <http://nixos.org/channels/nixos-21.11>). A NixOS channel is identical
@@ -120,7 +120,7 @@ will install the package called `subversion` from `nixpkgs` channel (which is, o
 [Subversion version management system](http://subversion.tigris.org/)).
 
 > **Note**
-> 
+>
 > When you ask Nix to install a package, it will first try to get it in
 > pre-compiled form from a *binary cache*. By default, Nix will use the
 > binary cache <https://cache.nixos.org>; it contains binaries for most
