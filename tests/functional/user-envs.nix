@@ -30,5 +30,6 @@ in
     (makeDrv "foo-2.0" "foo")
     (makeDrv "bar-0.1.1" "bar")
     (makeDrv "foo-0.1" "foo" // { meta.priority = 10; })
+    (makeDrv "foo-0.2" "ijioj" // { meta.priority = 13; })
     (makeDrv "fail-0.1" "fail")
   ]
