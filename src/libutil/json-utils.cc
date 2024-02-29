@@ -90,4 +90,36 @@ const nlohmann::json::boolean_t & getBoolean(const nlohmann::json & value)
 
     return value.get_ref<const nlohmann::json::boolean_t &>();
 }
+
+StringSet getStringSet(const nlohmann::json & value)
+{
+    StringSet stringSet = {};
+    auto asArray = getArray(value);
+    for(auto & elem: asArray){
+        stringSet.insert(getString(elem));
+    }
+    return stringSet;
+}
+
+Strings getStringList(const nlohmann::json & value)
+{
+    Strings stringList = {};
+    auto asArray = getArray(value);
+    for(auto & elem: asArray){
+        stringList.push_back(getString(elem));
+    }
+    return stringList;
+}
+
+
+StringMap getStringMap(const nlohmann::json & value)
+{
+    StringMap stringMap = {};
+    auto asObject = getObject(value);
+    for(auto & [key, elem]: asObject){
+        stringMap.insert(key, getString(elem));
+    }
+    return stringMap;
+}
+
 }
